@@ -16,3 +16,4 @@ public class SqArea {
         System.out.println(" p = 6, k = 2, s = 1, real = " + result2);
     }
 }
+

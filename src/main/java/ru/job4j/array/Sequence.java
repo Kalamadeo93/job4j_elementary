@@ -12,5 +12,6 @@ public class Sequence {
         array[2][0] = 2;
         array[2][1] = 22;
         array[2][2] = 222;
+        array[2][2] = 122;
     }
 }

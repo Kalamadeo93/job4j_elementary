@@ -1,22 +1,14 @@
 package ru.job4j;
 
+import java.util.Scanner;
+
 public class Echo {
     public static void main(String[] args) {
-        int a = 1;
-        int b = 2;
-        int c = 3;
-        if (a > b) {
-            if (a > c) {
-                System.out.println(a);
-            } else {
-                System.out.println(c);
-            }
-        } else {
-            if (b > c) {
-                System.out.println(b);
-            } else {
-                System.out.println(c);
-            }
-        }
+        String fullName = "Фамилия Имя Отчество";
+        String phoneNumber = "+7(938) 123-45-67";
+        System.out.println("************************");
+        System.out.println("* " + fullName + " *");
+        System.out.println("* " + phoneNumber + "    *");
+        System.out.println("************************" + '\n');
     }
 }

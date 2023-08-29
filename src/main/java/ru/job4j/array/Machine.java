@@ -21,12 +21,3 @@ public class Machine {
         return Arrays.copyOf(rsl, size);
     }
 }
-/*
-while (diff - coins[i] >= 0) {
-                    diff -= coins[i];
-                    rsl[size] = coins[i];
-                    size++;
-                    break;
-                }
-
- */

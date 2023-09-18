@@ -20,7 +20,7 @@ public class SimpleStringEncoder {
         return result;
     }
 
-    private static String assign (String result, char symbol, int counter) {
+    private static String assign(String result, char symbol, int counter) {
         result += (counter == 1) ? Character.toString(symbol) : Character.toString(symbol) + counter;
         return result;
     }

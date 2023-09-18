@@ -1,15 +1,13 @@
 package ru.job4j.array;
 
 import org.junit.jupiter.api.Test;
+import  static ru.job4j.array.SimpleStringEncoder.encode;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class SimpleStringEncoderTest {
     @Test
     void whenStringaaabbcThenResulta3b2c() {
-        String input = "aaabbc";
-        String expected = "a3b2c";
-        String result = SimpleStringEncoder.encode(input);
-        assertThat(result).isEqualTo(expected);
+        assertThat(encode("aaabbc")).isEqualTo("a3b2c");
     }
 
     @Test

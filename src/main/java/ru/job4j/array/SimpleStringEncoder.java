@@ -9,13 +9,13 @@ public class SimpleStringEncoder {
             if (symbol == input.charAt(i)) {
                 counter++;
             } else  {
-                result += SimpleStringEncoder.assign(result, symbol, counter);
+                result = SimpleStringEncoder.assign(result, symbol, counter);
                 symbol = input.charAt(i);
                 counter = 1;
             }
         }
 
-        result += SimpleStringEncoder.assign(result, symbol, counter);
+        result = SimpleStringEncoder.assign(result, symbol, counter);
 
         return result;
     }

@@ -14,9 +14,7 @@ public class SimpleStringEncoder {
                 counter = 1;
             }
         }
-
         result = SimpleStringEncoder.assign(result, symbol, counter);
-
         return result;
     }
 

@@ -36,4 +36,37 @@ public class PointTest {
         Point b = new Point(4, 8);
         Assert.assertEquals(expected, a.distance(b), 0.01);
     }
+
+    @Test
+    public void when800to000then8() {
+        double expected = 8;
+        Point c = new Point(8, 0, 0);
+        Point d = new Point(0, 0, 0);
+        Assert.assertEquals(expected, c.distance3d(d), 0.01);
+    }
+
+    @Test
+    public void when212to222then1() {
+        double expected = 1;
+        Point c = new Point(2, 1, 2);
+        Point d = new Point(2, 2, 2);
+        Assert.assertEquals(expected, c.distance3d(d), 0.01);
+    }
+
+    @Test
+    public void when444to44Minus4then8() {
+        double expected = 8;
+        Point c = new Point(4, 4, 4);
+        Point d = new Point(4, 4, -4);
+        Assert.assertEquals(expected, c.distance3d(d), 0.01);
+    }
+
+    @Test
+    public void when000to000then0() {
+        double expected = 0;
+        Point c = new Point(0, 0, 0);
+        Point d = new Point(0, 0, 0);
+        Assert.assertEquals(expected, c.distance3d(d), 0.01);
+    }
+
 }

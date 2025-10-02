@@ -32,23 +32,23 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax2To1Up1Then2() {
-        int left = 2;
-        int right = 1;
-        int up = 1;
+    public void whenLeft12Right5Up8Then12() {
+        int left = 12;
+        int right = 5;
+        int up = 8;
         int result = Max.max(left, right, up);
-        int expected = 3;
+        int expected = 12;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenMax2To2Up1Down2Then2() {
+    public void whenLeft2Right4Up5Down8Then8() {
         int left = 2;
-        int right = 2;
-        int up = 2;
-        int down = 1;
+        int right = 4;
+        int up = 5;
+        int down = 8;
         int result = Max.max(left, right, up, down);
-        int expected = 4;
+        int expected = 8;
         assertThat(result).isEqualTo(expected);
     }
 }
